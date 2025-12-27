@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ki Chue Lwin | Cloud & Infrastructure Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f1f5f9; }
+        .glass-card { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); }
+        .accent-gradient { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); }
+        .text-gradient { background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .timeline-dot { width: 12px; height: 12px; background: #3b82f6; border-radius: 50%; outline: 4px solid rgba(59, 130, 246, 0.2); }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="selection:bg-blue-500/30">
+
+    <nav class="fixed top-0 left-0 h-screen w-20 hidden lg:flex flex-col items-center py-8 border-r border-slate-800 bg-slate-950/50">
+        <div class="text-blue-500 text-2xl font-black mb-12">KCL</div>
+        <div class="flex flex-col gap-8 text-slate-500">
+            <a href="#about" class="hover:text-white transition" title="About"><i class="fas fa-user-astronaut"></i></a>
+            <a href="#experience" class="hover:text-white transition" title="Experience"><i class="fas fa-briefcase"></i></a>
+            <a href="#projects" class="hover:text-white transition" title="Projects"><i class="fas fa-project-diagram"></i></a>
+            <a href="#skills" class="hover:text-white transition" title="Skills"><i class="fas fa-tools"></i></a>
+        </div>
+    </nav>
+
+    <main class="lg:ml-20">
+        <section id="about" class="min-h-screen flex flex-col justify-center px-6 md:px-20 max-w-6xl">
+            <span class="text-blue-400 font-mono mb-4">Hello, my name is</span>
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight">Ki Chue <span class="text-gradient">Lwin.</span></h1>
+            <h2 class="text-3xl md:text-5xl font-bold text-slate-400 mb-8 leading-tight">I build and scale cloud infrastructure.</h2>
+            <p class="text-slate-400 text-lg max-w-2xl mb-12 leading-relaxed">
+                I am a <span class="text-white font-medium">Junior Cloud Engineer</span> at Central Nex, specializing in AWS architectures, automation, and CI/CD. I focus on making infrastructure reliable, secure, and ready for data-driven applications.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="mailto:kichuelwin@gmail.com" class="accent-gradient px-8 py-4 rounded-lg font-bold hover:opacity-90 transition shadow-lg shadow-blue-500/20">Contact Me</a>
+                <a href="https://linkedin.com/in/kichuelwin" target="_blank" class="glass-card px-8 py-4 rounded-lg font-bold hover:bg-slate-800 transition border border-slate-700">View LinkedIn</a>
+            </div>
+        </section>
+
+        <section id="experience" class="py-24 px-6 md:px-20 bg-slate-950/50">
+            <h3 class="text-3xl font-bold mb-16 flex items-center gap-4 text-white">
+                <span class="text-blue-500 font-mono text-xl">01.</span> Professional Experience
+            </h3>
+            <div class="space-y-12 max-w-4xl">
+                <div class="relative pl-8 border-l border-slate-800">
+                    <div class="absolute -left-1.5 top-1.5 timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h4 class="text-xl font-bold text-white">Junior Cloud Engineer <span class="text-blue-400">@ Central Nex</span></h4>
+                        <span class="text-slate-500 font-mono text-sm">April 2025 — Present</span>
+                    </div>
+                    <ul class="text-slate-400 space-y-3 text-sm">
+                        <li class="flex gap-2"><span>▹</span> Designed and configured AWS infrastructure for internal and client projects using EC2, S3, RDS, and VPC.</li>
+                        <li class="flex gap-2"><span>▹</span> Implemented and managed CI/CD pipelines primarily using GitHub Actions for seamless deployment.</li>
+                        <li class="flex gap-2"><span>▹</span> Monitored performance and availability using CloudWatch and centralized logging.</li>
+                        <li class="flex gap-2"><span>▹</span> Performed routine maintenance, backup configurations, and troubleshooting for Linux servers.</li>
+                    </ul>
+                </div>
+
+                <div class="relative pl-8 border-l border-slate-800">
+                    <div class="absolute -left-1.5 top-1.5 timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h4 class="text-xl font-bold text-white">System Engineer Intern <span class="text-blue-400">@ Zettatech Myanmar</span></h4>
+                        <span class="text-slate-500 font-mono text-sm">Dec 2024 — March 2025</span>
+                    </div>
+                    <ul class="text-slate-400 space-y-3 text-sm">
+                        <li class="flex gap-2"><span>▹</span> Assisted in managing AWS-based infrastructure supporting ERP systems and business applications.</li>
+                        <li class="flex gap-2"><span>▹</span> Helped provision cloud resources and monitored system health for senior engineers.</li>
+                        <li class="flex gap-2"><span>▹</span> Supported troubleshooting of incidents related to cloud resources.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-24 px-6 md:px-20">
+            <h3 class="text-3xl font-bold mb-16 flex items-center gap-4 text-white">
+                <span class="text-blue-500 font-mono text-xl">02.</span> Core Technical Stack
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl">
+                    <h5 class="text-blue-400 font-bold mb-4 flex items-center gap-2"><i class="fab fa-aws"></i> Cloud Services</h5>
+                    <p class="text-sm text-slate-300 leading-relaxed">EC2, S3, RDS, VPC, IAM, CloudWatch, CloudFront, Lambda, EBS, ElasticCache, Route 53, Certificate Manager.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <h5 class="text-purple-400 font-bold mb-4 flex items-center gap-2"><i class="fas fa-code-branch"></i> DevOps & Tools</h5>
+                    <p class="text-sm text-slate-300 leading-relaxed">Terraform (Beg), CloudFormation, GitHub Actions, Jenkins basics, Docker, Git/GitHub, CI/CD Pipelines.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <h5 class="text-green-400 font-bold mb-4 flex items-center gap-2"><i class="fas fa-terminal"></i> OS & DB</h5>
+                    <p class="text-sm text-slate-300 leading-relaxed">Linux Admin, Bash Scripting, Python, MySQL, PostgreSQL, MongoDB.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 px-6 md:px-20 bg-slate-950/50">
+            <h3 class="text-3xl font-bold mb-16 flex items-center gap-4 text-white">
+                <span class="text-blue-500 font-mono text-xl">03.</span> Labs & Technical Projects
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500/50 transition group">
+                    <div class="flex justify-between mb-4">
+                        <i class="fas fa-folder text-blue-500 text-3xl"></i>
+                        <a href="https://github.com/KiChueLwin/CI-CD-GitHub-Actions" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-white">CI/CD Pipeline for Apps</h4>
+                    <p class="text-slate-400 text-sm mb-6">End-to-end automation using GitHub Actions. Authored YAML workflows for automated build, test, and packaging on Git push/PR events.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">GitHub Actions</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">YAML</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">Automation</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500/50 transition group">
+                    <div class="flex justify-between mb-4">
+                        <i class="fas fa-network-wired text-blue-500 text-3xl"></i>
+                        <a href="https://github.com/KiChueLwin/AWS-Hands-On-Labs" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-white">AWS Three-Tier Architecture</h4>
+                    <p class="text-slate-400 text-sm mb-6">Implemented a scalable VPC with public/private subnets, EC2 tiers, and RDS MySQL database. Configured IGW, routing, and Security Groups.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">VPC</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">RDS</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">Security</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500/50 transition group">
+                    <div class="flex justify-between mb-4">
+                        <i class="fas fa-chart-line text-blue-500 text-3xl"></i>
+                        <a href="https://github.com/KiChueLwin/AWS-Hands-On-Labs" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-white">CloudWatch Monitoring Lab</h4>
+                    <p class="text-slate-400 text-sm mb-6">Readiness for production support. Configured CPU utilization alarms and SNS notifications for incident handling.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">CloudWatch</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">SNS</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">Alerting</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500/50 transition group">
+                    <div class="flex justify-between mb-4">
+                        <i class="fas fa-cloud-upload-alt text-blue-500 text-3xl"></i>
+                        <a href="https://github.com/KiChueLwin/AWS-Hands-On-Labs" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-white">S3 & CloudFront Hosting</h4>
+                    <p class="text-slate-400 text-sm mb-6">Cost-effective serverless hosting. Configured S3 bucket policies, public access controls, and CloudFront CDN with HTTPS.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">S3</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">CloudFront</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">HTTPS</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500/50 transition group">
+                    <div class="flex justify-between mb-4">
+                        <i class="fas fa-terminal text-blue-500 text-3xl"></i>
+                        <a href="https://github.com/KiChueLwin/Linux" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Linux Admin & Bash Automation</h4>
+                    <p class="text-slate-400 text-sm mb-6">Built automation for operational tasks including user management scripts and local-to-S3 backup scripts via Cron.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">Bash</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">Linux</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">Cron</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500/50 transition group">
+                    <div class="flex justify-between mb-4">
+                        <i class="fas fa-cubes text-blue-500 text-3xl"></i>
+                        <a href="https://github.com/KiChueLwin/Kubernetes-Labs" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Kubernetes Practice Labs</h4>
+                    <p class="text-slate-400 text-sm mb-6">Foundation in container orchestration. Worked with Pods, Deployments, ReplicaSets, and Services using YAML manifests.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">Kubernetes</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">Docker</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-1 rounded">YAML</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 md:px-20">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 italic text-white underline decoration-blue-500 underline-offset-8">Education</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-blue-400 font-bold">Diploma in Computing</p>
+                            <p class="text-sm text-slate-400 uppercase">University of Greenwich (2025)</p>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold">College Preparatory</p>
+                            <p class="text-sm text-slate-400 uppercase">RVi Institute, Yangon (2023)</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 italic text-white underline decoration-blue-500 underline-offset-8">Certifications</h3>
+                    <div class="grid grid-cols-1 gap-4 text-sm">
+                        <div class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-500"></i> AWS Cloud Technical Essentials</div>
+                        <div class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-500"></i> GitHub Foundations</div>
+                        <div class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-500"></i> Linux - Introduction to Linux (LFS01)</div>
+                        <div class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-500"></i> IBM DevOps & Shell Scripting</div>
+                        <div class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-500"></i> Python (Intro & Intermediate)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-12 border-t border-slate-900 text-center text-slate-500 text-xs tracking-widest uppercase">
+            Built by Ki Chue Lwin © 2025 | Cloud & Infrastructure Engineering
+        </footer>
+    </main>
+
+</body>
+</html>
