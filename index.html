@@ -12,264 +12,252 @@
         .glass-card { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); }
         .accent-gradient { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); }
         .text-gradient { background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .timeline-dot { width: 12px; height: 12px; background: #3b82f6; border-radius: 50%; outline: 4px solid rgba(59, 130, 246, 0.2); }
         html { scroll-behavior: smooth; }
     </style>
 </head>
+<body class="selection:bg-blue-500/30">
 
-<body>
-
-<main>
-
-<!-- PROJECTS SECTION -->
-<section id="projects" class="py-24 px-6 md:px-20 bg-slate-950/50">
-    <h3 class="text-3xl font-bold mb-16 flex items-center gap-4 text-white">
-        <span class="text-blue-500 font-mono text-xl">03.</span> Key Projects
-    </h3>
-
-    <div class="grid md:grid-cols-2 gap-8">
-
-        <!-- PROJECT 1 -->
-        <div class="glass-card p-8 rounded-2xl">
-            <div class="flex justify-between mb-4">
-                <i class="fas fa-recycle text-blue-500 text-3xl"></i>
-                <a href="https://github.com/KiChueLwin/CI-CD-GitHub-Actions" target="_blank"
-                   class="text-slate-400 hover:text-white transition">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
-            </div>
-
-            <h4 class="text-xl font-bold mb-3 text-white">
-                CI/CD Pipeline for Application Deployment
-            </h4>
-
-            <p class="text-slate-400 text-sm mb-4">
-                <span class="text-blue-400 font-semibold">Outcome:</span>
-                Demonstrates automation and operational efficiency for cloud workloads.
-            </p>
-
-            <div class="text-slate-400 text-sm space-y-3 mb-5">
-                <p>
-                    <span class="text-white font-semibold">What I Built:</span><br>
-                    • End-to-end CI/CD pipeline using GitHub Actions<br>
-                    • Automated build, test, and artifact packaging on push / pull requests
-                </p>
-
-                <p>
-                    <span class="text-white font-semibold">Responsibilities:</span><br>
-                    • Implemented automated tests and artifact creation<br>
-                    • Practiced branching strategies and pull-request based code reviews
-                </p>
-            </div>
-
-            <div class="flex flex-wrap gap-2">
-                <span class="tag">CI/CD</span>
-                <span class="tag">GitHub Actions</span>
-                <span class="tag">DevOps</span>
-                <span class="tag">Automation</span>
-            </div>
+    <nav class="fixed top-0 left-0 h-screen w-20 hidden lg:flex flex-col items-center py-8 border-r border-slate-800 bg-slate-950/50">
+        <div class="text-blue-500 text-2xl font-black mb-12">KCL</div>
+        <div class="flex flex-col gap-8 text-slate-500">
+            <a href="#about" class="hover:text-white transition" title="About"><i class="fas fa-user-astronaut"></i></a>
+            <a href="#experience" class="hover:text-white transition" title="Experience"><i class="fas fa-briefcase"></i></a>
+            <a href="#projects" class="hover:text-white transition" title="Projects"><i class="fas fa-project-diagram"></i></a>
+            <a href="#skills" class="hover:text-white transition" title="Skills"><i class="fas fa-tools"></i></a>
         </div>
+    </nav>
 
-        <!-- PROJECT 2 -->
-        <div class="glass-card p-8 rounded-2xl">
-            <div class="flex justify-between mb-4">
-                <i class="fas fa-server text-blue-500 text-3xl"></i>
-                <a href="https://github.com/KiChueLwin/AWS-Hands-On-Labs/blob/main/aws-three-tier-architecture-demo"
-                   target="_blank" class="text-slate-400 hover:text-white transition">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
-            </div>
-
-            <h4 class="text-xl font-bold mb-3 text-white">
-                AWS Three-Tier Architecture Implementation
-            </h4>
-
-            <p class="text-slate-400 text-sm mb-4">
-                <span class="text-blue-400 font-semibold">Outcome:</span>
-                Hands-on experience with scalable architectures used in enterprise platforms.
+    <main class="lg:ml-20">
+        <section id="about" class="min-h-screen flex flex-col justify-center px-6 md:px-20 max-w-6xl">
+            <span class="text-blue-400 font-mono mb-4">Hello, my name is</span>
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight">Ki Chue <span class="text-gradient">Lwin.</span></h1>
+            <h2 class="text-3xl md:text-5xl font-bold text-slate-400 mb-8 leading-tight">I automate and scale cloud infrastructure.</h2>
+            <p class="text-slate-400 text-lg max-w-2xl mb-12 leading-relaxed">
+                I am a <span class="text-white font-medium">Cloud & DevOps Engineer</span>.I specialize in building highly available AWS architectures and implementing CI/CD pipelines to streamline software delivery and infrastructure management.
             </p>
-
-            <div class="text-slate-400 text-sm space-y-3 mb-5">
-                <p>
-                    <span class="text-white font-semibold">Architecture:</span><br>
-                    • Web Tier (EC2)<br>
-                    • Application / Processing Tier<br>
-                    • Database Tier (RDS MySQL)<br>
-                    • S3 for static assets
-                </p>
-
-                <p>
-                    <span class="text-white font-semibold">Responsibilities:</span><br>
-                    • Designed custom VPC with public/private subnets<br>
-                    • Configured routing, Internet Gateway, IAM, and Security Groups
-                </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="mailto:kichuelwin@gmail.com" class="accent-gradient px-8 py-4 rounded-lg font-bold hover:opacity-90 transition shadow-lg shadow-blue-500/20">Contact Me</a>
+                <a href="https://linkedin.com/in/kichuelwin" target="_blank" class="glass-card px-8 py-4 rounded-lg font-bold hover:bg-slate-800 transition border border-slate-700">View LinkedIn</a>
             </div>
+        </section>
 
-            <div class="flex flex-wrap gap-2">
-                <span class="tag">AWS</span>
-                <span class="tag">VPC</span>
-                <span class="tag">EC2</span>
-                <span class="tag">RDS</span>
-                <span class="tag">Security</span>
+        <section id="experience" class="py-24 px-6 md:px-20 bg-slate-950/50">
+            <h3 class="text-3xl font-bold mb-16 flex items-center gap-4 text-white">
+                <span class="text-blue-500 font-mono text-xl">01.</span> Professional Experience
+            </h3>
+            <div class="space-y-12 max-w-4xl">
+                <div class="relative pl-8 border-l border-slate-800">
+                    <div class="absolute -left-1.5 top-1.5 timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h4 class="text-xl font-bold text-white">Junior Cloud Engineer <span class="text-blue-400">@ Central Nex</span></h4>
+                        <span class="text-slate-500 font-mono text-sm">April 2025 — Present</span>
+                    </div>
+                    <ul class="text-slate-400 space-y-3 text-sm">
+                        <li class="flex gap-2"><span>▹</span> Architect and deploy scalable AWS infrastructure including VPC networking, compute (EC2), and managed databases (RDS).</li>
+                        <li class="flex gap-2"><span>▹</span> Build and optimize automated CI/CD workflows using GitHub Actions to improve deployment frequency and reliability.</li>
+                        <li class="flex gap-2"><span>▹</span> Implement proactive monitoring and logging solutions with CloudWatch to ensure 24/7 system availability.</li>
+                        <li class="flex gap-2"><span>▹</span> Manage Linux server environments through automated scripting and rigorous patch management.</li>
+                    </ul>
+                </div>
+
+                <div class="relative pl-8 border-l border-slate-800">
+                    <div class="absolute -left-1.5 top-1.5 timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h4 class="text-xl font-bold text-white">System Engineer Intern <span class="text-blue-400">@ Zettatech Myanmar</span></h4>
+                        <span class="text-slate-500 font-mono text-sm">Dec 2024 — March 2025</span>
+                    </div>
+                    <ul class="text-slate-400 space-y-3 text-sm">
+                        <li class="flex gap-2"><span>▹</span> Supported AWS resource provisioning and maintenance for business-critical ERP environments.</li>
+                        <li class="flex gap-2"><span>▹</span> Assisted in system health monitoring and technical troubleshooting to minimize infrastructure downtime.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!-- PROJECT 3 -->
-        <div class="glass-card p-8 rounded-2xl">
-            <div class="flex justify-between mb-4">
-                <i class="fas fa-heartbeat text-blue-500 text-3xl"></i>
-                <a href="https://github.com/KiChueLwin/AWS-Hands-On-Labs/blob/main/aws-cloudwatch-alerting-lab"
-                   target="_blank" class="text-slate-400 hover:text-white transition">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
+        <section id="projects" class="py-24 px-6 md:px-20">
+            <h3 class="text-3xl font-bold mb-16 flex items-center gap-4 text-white">
+                <span class="text-blue-500 font-mono text-xl">02.</span> Technical Projects
+            </h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="accent-gradient p-3 rounded-lg shadow-lg shadow-blue-500/20">
+                            <i class="fas fa-recycle text-white text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/KiChueLwin/CI-CD-GitHub-Actions" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-2xl"></i></a>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2 text-white">CI/CD Pipeline for App Deployment</h4>
+                    <p class="text-blue-400 text-sm font-mono mb-4 uppercase tracking-wider">Outcome: Operational Efficiency & Automation</p>
+                    <div class="space-y-4 text-slate-400 text-sm mb-6">
+                        <p><strong class="text-slate-200">The Build:</strong> End-to-end delivery pipeline using GitHub Actions to automate build, test, and packaging stages on git push/PR events.</p>
+                        <p><strong class="text-slate-200">Responsibilities:</strong> Implemented automated test suites, artifact creation, and managed branching strategies with rigorous code reviews.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">GitHub Actions</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">YAML</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="accent-gradient p-3 rounded-lg shadow-lg shadow-blue-500/20">
+                            <i class="fas fa-network-wired text-white text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/KiChueLwin/AWS-Hands-On-Labs/blob/main/aws-three-tier-architecture-demo" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-2xl"></i></a>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2 text-white">AWS Three‑Tier Architecture</h4>
+                    <p class="text-blue-400 text-sm font-mono mb-4 uppercase tracking-wider">Outcome: Data & Analytics Ready Infrastructure</p>
+                    <div class="space-y-4 text-slate-400 text-sm mb-6">
+                        <p><strong class="text-slate-200">Architecture:</strong> Scalable stack featuring Web (EC2), App, and Database (RDS MySQL) tiers with S3 for static assets.</p>
+                        <p><strong class="text-slate-200">Responsibilities:</strong> Designed custom VPC with public/private subnets, configured IGW/Routing, and enforced IAM least-privilege security.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">VPC</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">EC2</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">RDS</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">Security Groups</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="accent-gradient p-3 rounded-lg shadow-lg shadow-blue-500/20">
+                            <i class="fas fa-heartbeat text-white text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/KiChueLwin/AWS-Hands-On-Labs/blob/main/aws-cloudwatch-alerting-lab" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-2xl"></i></a>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2 text-white">CloudWatch Monitoring & Alerting</h4>
+                    <p class="text-blue-400 text-sm font-mono mb-4 uppercase tracking-wider">Outcome: Production Readiness & Reliability</p>
+                    <div class="space-y-4 text-slate-400 text-sm mb-6">
+                        <p><strong class="text-slate-200">The Build:</strong> Real-time infrastructure monitoring lab focusing on incident handling and proactive system health.</p>
+                        <p><strong class="text-slate-200">Responsibilities:</strong> Configured CPU utilization alarms, established SNS email notifications, and performed log/metric inspection for troubleshooting.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">CloudWatch</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">SNS</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">Incident Response</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="accent-gradient p-3 rounded-lg shadow-lg shadow-blue-500/20">
+                            <i class="fas fa-globe text-white text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/KiChueLwin/AWS-Hands-On-Labs/blob/main/s3-static-website-hosting" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-2xl"></i></a>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2 text-white">Serverless Website Hosting</h4>
+                    <p class="text-blue-400 text-sm font-mono mb-4 uppercase tracking-wider">Outcome: Cost-Effective Edge Delivery</p>
+                    <div class="space-y-4 text-slate-400 text-sm mb-6">
+                        <p><strong class="text-slate-200">The Build:</strong> Scalable static hosting solution utilizing AWS serverless primitives for global content delivery.</p>
+                        <p><strong class="text-slate-200">Responsibilities:</strong> Configured S3 hosting with strict bucket policies, implemented CloudFront CDN for edge caching, and secured delivery via HTTPS/SSL.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">S3</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">CloudFront</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">SSL/TLS</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="accent-gradient p-3 rounded-lg shadow-lg shadow-blue-500/20">
+                            <i class="fas fa-terminal text-white text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/KiChueLwin/Linux" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-2xl"></i></a>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2 text-white">Linux Admin & Automation</h4>
+                    <p class="text-blue-400 text-sm font-mono mb-4 uppercase tracking-wider">Outcome: Operational Task Automation</p>
+                    <div class="space-y-4 text-slate-400 text-sm mb-6">
+                        <p><strong class="text-slate-200">The Build:</strong> Suite of automation scripts designed to handle repetitive system administration tasks and secure data offloading.</p>
+                        <p><strong class="text-slate-200">Key Features:</strong> Developed automated user management systems and backup scripts for local-to-S3 synchronization using Bash and Cron.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">Bash</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">Cron</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">Automation</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="accent-gradient p-3 rounded-lg shadow-lg shadow-blue-500/20">
+                            <i class="fas fa-cubes text-white text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/KiChueLwin/Kubernetes-Labs" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-2xl"></i></a>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2 text-white">Kubernetes Foundational Labs</h4>
+                    <p class="text-blue-400 text-sm font-mono mb-4 uppercase tracking-wider">Outcome: Container Orchestration Proficiency</p>
+                    <div class="space-y-4 text-slate-400 text-sm mb-6">
+                        <p><strong class="text-slate-200">Focus:</strong> Practical implementation of modern containerized data platforms and orchestration strategies.</p>
+                        <p><strong class="text-slate-200">Topics Covered:</strong> Management of Pods, Deployments, and ReplicaSets through declarative YAML manifests and Service networking.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">K8s</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">Docker</span>
+                        <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">YAML</span>
+                    </div>
+                </div>
+
             </div>
+        </section>
 
-            <h4 class="text-xl font-bold mb-3 text-white">
-                CloudWatch Monitoring & Alerting
-            </h4>
-
-            <p class="text-slate-400 text-sm mb-4">
-                <span class="text-blue-400 font-semibold">Outcome:</span>
-                Demonstrates readiness for production support and incident response.
-            </p>
-
-            <div class="text-slate-400 text-sm space-y-3 mb-5">
-                <p>
-                    <span class="text-white font-semibold">Responsibilities:</span><br>
-                    • Configured CPU utilization alarms<br>
-                    • Set up SNS email notifications<br>
-                    • Practiced metric and log inspection
-                </p>
+        <section id="skills" class="py-24 px-6 md:px-20 bg-slate-950/50">
+            <h3 class="text-3xl font-bold mb-16 flex items-center gap-4 text-white">
+                <span class="text-blue-500 font-mono text-xl">03.</span> Core Technical Stack
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl">
+                    <h5 class="text-blue-400 font-bold mb-4 flex items-center gap-2"><i class="fab fa-aws"></i> Cloud Infrastructure</h5>
+                    <p class="text-sm text-slate-300 leading-relaxed">VPC, EC2, S3, RDS, IAM, Lambda, EBS, Route 53, CloudFront, ElasticCache, Certificate Manager.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <h5 class="text-purple-400 font-bold mb-4 flex items-center gap-2"><i class="fas fa-code-branch"></i> DevOps & IaC</h5>
+                    <p class="text-sm text-slate-300 leading-relaxed">Terraform, CloudFormation, GitHub Actions, Jenkins, Docker, Kubernetes (K8s), Git, CI/CD Pipelines.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <h5 class="text-green-400 font-bold mb-4 flex items-center gap-2"><i class="fas fa-terminal"></i> Automation & OS</h5>
+                    <p class="text-sm text-slate-300 leading-relaxed">Linux Systems Administration, Bash Scripting, Python, MySQL, PostgreSQL, MongoDB.</p>
+                </div>
             </div>
+        </section>
 
-            <div class="flex flex-wrap gap-2">
-                <span class="tag">CloudWatch</span>
-                <span class="tag">Monitoring</span>
-                <span class="tag">Alerting</span>
-                <span class="tag">Reliability</span>
+        <section class="py-24 px-6 md:px-20">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 italic text-white underline decoration-blue-500 underline-offset-8">Education</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-blue-400 font-bold">Diploma in Computing</p>
+                            <p class="text-sm text-slate-400 uppercase">University of Greenwich (2025)</p>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold">College Preparatory</p>
+                            <p class="text-sm text-slate-400 uppercase">RVi Institute, Yangon (2023)</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 italic text-white underline decoration-blue-500 underline-offset-8">Certifications</h3>
+                    <div class="grid grid-cols-1 gap-4 text-sm">
+                        <div class="flex items-center gap-3 text-slate-300"><i class="fas fa-check-circle text-blue-500"></i> AWS Cloud Technical Essentials</div>
+                        <div class="flex items-center gap-3 text-slate-300"><i class="fas fa-check-circle text-blue-500"></i> GitHub Foundations</div>
+                        <div class="flex items-center gap-3 text-slate-300"><i class="fas fa-check-circle text-blue-500"></i> Linux - Introduction to Linux (LFS01)</div>
+                        <div class="flex items-center gap-3 text-slate-300"><i class="fas fa-check-circle text-blue-500"></i> IBM DevOps & Shell Scripting</div>
+                        <div class="flex items-center gap-3 text-slate-300"><i class="fas fa-check-circle text-blue-500"></i> Python (Intro & Intermediate)</div>
+                        <div class="flex items-center gap-3 text-slate-300"><i class="fas fa-check-circle text-blue-500"></i> 100 Days of Cloud(AWS)</div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!-- PROJECT 4 -->
-        <div class="glass-card p-8 rounded-2xl">
-            <div class="flex justify-between mb-4">
-                <i class="fas fa-globe text-blue-500 text-3xl"></i>
-                <a href="https://github.com/KiChueLwin/AWS-Hands-On-Labs/blob/main/s3-static-website-hosting"
-                   target="_blank" class="text-slate-400 hover:text-white transition">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
-            </div>
+        <footer class="py-12 border-t border-slate-900 text-center text-slate-500 text-xs tracking-widest uppercase">
+            Built by Ki Chue Lwin © 2026 | Cloud & DevOps
+        </footer>
+    </main>
 
-            <h4 class="text-xl font-bold mb-3 text-white">
-                S3 Static Website Hosting with CloudFront
-            </h4>
-
-            <p class="text-slate-400 text-sm mb-4">
-                <span class="text-blue-400 font-semibold">Outcome:</span>
-                Demonstrates cost-effective, serverless hosting and global content delivery.
-            </p>
-
-            <div class="text-slate-400 text-sm space-y-3 mb-5">
-                <p>
-                    <span class="text-white font-semibold">Responsibilities:</span><br>
-                    • Enabled S3 static website hosting<br>
-                    • Configured bucket policies and access controls<br>
-                    • Added CloudFront distribution with HTTPS
-                </p>
-            </div>
-
-            <div class="flex flex-wrap gap-2">
-                <span class="tag">S3</span>
-                <span class="tag">CloudFront</span>
-                <span class="tag">CDN</span>
-                <span class="tag">Security</span>
-            </div>
-        </div>
-
-        <!-- PROJECT 5 -->
-        <div class="glass-card p-8 rounded-2xl">
-            <div class="flex justify-between mb-4">
-                <i class="fas fa-terminal text-blue-500 text-3xl"></i>
-                <a href="https://github.com/KiChueLwin/Linux" target="_blank"
-                   class="text-slate-400 hover:text-white transition">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
-            </div>
-
-            <h4 class="text-xl font-bold mb-3 text-white">
-                Linux Administration & Automation Scripts
-            </h4>
-
-            <p class="text-slate-400 text-sm mb-4">
-                <span class="text-blue-400 font-semibold">Outcome:</span>
-                Demonstrates scripting capability for operational tasks.
-            </p>
-
-            <div class="text-slate-400 text-sm space-y-3 mb-5">
-                <p>
-                    <span class="text-white font-semibold">What I Built:</span><br>
-                    • User management scripts<br>
-                    • Backup automation (local → S3)
-                </p>
-            </div>
-
-            <div class="flex flex-wrap gap-2">
-                <span class="tag">Linux</span>
-                <span class="tag">Bash</span>
-                <span class="tag">Cron</span>
-                <span class="tag">Automation</span>
-            </div>
-        </div>
-
-        <!-- PROJECT 6 -->
-        <div class="glass-card p-8 rounded-2xl">
-            <div class="flex justify-between mb-4">
-                <i class="fas fa-boxes text-blue-500 text-3xl"></i>
-                <a href="https://github.com/KiChueLwin/Kubernetes-Labs" target="_blank"
-                   class="text-slate-400 hover:text-white transition">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
-            </div>
-
-            <h4 class="text-xl font-bold mb-3 text-white">
-                Kubernetes Practice Labs (Foundational)
-            </h4>
-
-            <p class="text-slate-400 text-sm mb-4">
-                <span class="text-blue-400 font-semibold">Outcome:</span>
-                Foundational understanding of container orchestration in modern platforms.
-            </p>
-
-            <div class="text-slate-400 text-sm space-y-3 mb-5">
-                <p>
-                    <span class="text-white font-semibold">Covered Topics:</span><br>
-                    • Pods, Deployments, ReplicaSets, Services<br>
-                    • Declarative YAML manifests
-                </p>
-            </div>
-
-            <div class="flex flex-wrap gap-2">
-                <span class="tag">Kubernetes</span>
-                <span class="tag">Docker</span>
-                <span class="tag">YAML</span>
-                <span class="tag">Containers</span>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<style>
-.tag {
-    font-size: 10px;
-    font-family: monospace;
-    background: rgba(59,130,246,0.1);
-    color: #60a5fa;
-    padding: 4px 8px;
-    border-radius: 6px;
-}
-</style>
-
-</main>
 </body>
 </html>
-
